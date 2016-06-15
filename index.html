@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Classic Tailor</title>
     <link rel="stylesheet" href="style.css">
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="contaniner-fluid">
@@ -69,7 +69,9 @@
             <div class="col-md-3">
                 <img class="img-responsive center-block" src="images/pkg1.jpeg" alt="">
                 <h3>Dulha Package</h3>
-                <button type="button" class="btn btn-primary">Read More</button>            
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#dulhamodal">Read More</button>            
+            
+                
             </div>
             
             <div class="col-md-3">
@@ -90,6 +92,29 @@
                 <button type="button" class="btn btn-primary">Read More</button>
             </div>
         </div>
+        
+        
+        <!--modal start-->
+                <div id="dulhamodal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Dulha Package</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+
+                </div>
+                </div>
+                <!--modal close-->
         
     </div> <!--main div-->
 </body>
